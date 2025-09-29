@@ -50,7 +50,7 @@ app.post("/shorten", async (req, res) => {
 
     // Encode ID -> Base62 short code
     const shortCode = encode(id);
-    const shortUrl = `http://localhost:${port}/${shortCode}`;
+    const shortUrl = `https://shorty-dusky.vercel.app/${shortCode}`;
 
     res.json({ shortUrl });
   } catch (err) {
